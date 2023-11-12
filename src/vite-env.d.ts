@@ -1,6 +1,10 @@
 /// <reference types="vite/client" />
 
+interface ImportMetaEnv {
+  VITE_API_KEY: string;
+  VITE_HOST: string;
+}
+
 interface ImportMeta {
-  API_KEY: string;
-  HOST: string;
+  env: ImportMetaEnv;
 }
